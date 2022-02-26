@@ -12,6 +12,9 @@ function set(langsJson, contentsJson) {
     console.log(langs);
     p.innerHTML = "";
     for (var key in langs) {
+        if (langs[key] == 'HTML' || langs[key] == 'CSS') {
+            continue;
+        }
         var tr = document.createElement("span");
         tr.classList.add("t-item");
 
