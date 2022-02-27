@@ -12,19 +12,24 @@ body {
 
 h1 {
     font-weight: normal;
-    font-size: 2.5em;
+    font-size: 3em;
     text-align: center;
     padding: 0.3em;
     margin: 0;
 }
 
 h2 {
+    font-size: 2em;
     text-align: center;
 }
 
 #num {
     font-weight: bold;
     color: #ff3838;
+}
+
+#num:hover {
+    color: #ff0000;
 }
 
 #languages {
@@ -37,6 +42,7 @@ h2 {
 }
 
 .t-item {
+    font-size: 1.2em;
     color: #000000;
     background-color: #e2e2e2;
     overflow: hidden;
@@ -45,10 +51,12 @@ h2 {
     min-width: 120px;
     cursor: default;
     font-family: monospace;
+    border-radius: 25px;
 }
 
 .t-item:hover {
     box-shadow: 0 0 5px #221a1a80;
+    transform: scale(1.05);
 }
 
 .t-icon {
