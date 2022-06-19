@@ -4,23 +4,31 @@ function setNum(num) {
 }
 
 function set(langsJson, contentsJson) {
-    setNum(contentsJson.length);
 
-    var p = document.getElementById("languages");
+    var p = document.getElementById("languages-container");
     var langs = Object.keys(langsJson);
     langs.sort()
     console.log(langs);
     p.innerHTML = "";
+
+    snum = 0;
+    fletter = langs[0].charAt(0);
     for (var key in langs) {
         if (langs[key] == 'HTML' || langs[key] == 'CSS') {
             continue;
         }
+        if (langs[key].charAt(0) != fletter) {
+            p.innerHTML += "<br>";
+        }
+        snum += 1;
+        fletter = langs[key].charAt(0);
+
         var tr = document.createElement("span");
         tr.classList.add("t-item");
 
         var fileIcon = document.createElement("span");
         fileIcon.classList.add("t-icon");
-        fileIcon.innerHTML = '<i class="fa-solid fa-file-code"></i>'
+        fileIcon.innerHTML = '<span>' + snum + '</span>'
         tr.appendChild(fileIcon);
         
         var name = document.createElement("span");
@@ -32,6 +40,7 @@ function set(langsJson, contentsJson) {
     }
 
     document.getElementById("loading").innerHTML = "";
+    setNum(snum);
 }
 
 fetch("https://api.github.com/repos/was07/Hello-Worlds/languages")

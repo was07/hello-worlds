@@ -11,16 +11,16 @@ body {
 }
 
 h1 {
-    font-weight: normal;
-    font-size: 3em;
-    text-align: center;
-    padding: 0.3em;
+    font-weight: bold;
+    font-size: 3.5em;
+    /* text-align: center; */
+    /* padding: 0.3em; */
     margin: 0;
 }
 
 h2 {
     font-size: 2em;
-    text-align: center;
+    /* text-align: center; */
 }
 
 #num {
@@ -32,36 +32,39 @@ h2 {
     color: #ff0000;
 }
 
-#languages {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+#languages-container {
+    /* display: flex;
+    align-items: flex-end;
+    justify-content: left;
+    flex-wrap: wrap; */
     margin: auto;
     width: 100%;
 }
 
 .t-item {
+    display: inline-block;
     font-size: 1.2em;
     color: #000000;
     background-color: #e2e2e2;
     overflow: hidden;
     padding: 7px 10px;
     margin: 1px;
-    min-width: 120px;
+    margin-right: 7px;
+    margin-bottom: 10px;
+    min-width: 100px;
     cursor: default;
     font-family: monospace;
-    border-radius: 25px;
+    border-radius: 8px;
 }
 
 .t-item:hover {
-    box-shadow: 0 0 5px #221a1a80;
-    transform: scale(1.05);
+    box-shadow: 0 0 2px #221a1a80;
+    /* transform: scale(1.05); */
 }
 
 .t-icon {
-    font-size: .8em;
-    color: rgb(255, 179, 179);
+    color: #db4646;
+    font-weight: bold;
 }
 
 .t-name {
@@ -72,15 +75,16 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     margin: 5vh 0 8vh 0;
     width: 100%;
 }
 
 .top-link {
     text-decoration: none;
-    padding: 0.5em 1em;
-    margin: .1em;
+    padding: .5em 1em;
+    margin-right: 1em;
+    margin-bottom: .5em;
     border-radius: 0.2em;
     color: #ffffff;
     background-color: #9c3737;
