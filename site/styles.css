@@ -33,10 +33,6 @@ h2 {
 }
 
 #languages-container {
-    /* display: flex;
-    align-items: flex-end;
-    justify-content: left;
-    flex-wrap: wrap; */
     margin: auto;
     width: 100%;
 }
@@ -44,6 +40,7 @@ h2 {
 .t-item {
     display: inline-block;
     font-size: 1.2em;
+    text-decoration: none;
     color: #000000;
     background-color: #e2e2e2;
     overflow: hidden;
@@ -52,14 +49,13 @@ h2 {
     margin-right: 7px;
     margin-bottom: 10px;
     min-width: 100px;
-    cursor: default;
-    font-family: monospace;
     border-radius: 8px;
 }
 
 .t-item:hover {
     box-shadow: 0 0 2px #221a1a80;
-    /* transform: scale(1.05); */
+    background-color: #e2e2e2;
+    cursor: pointer;
 }
 
 .t-icon {
@@ -69,6 +65,11 @@ h2 {
 
 .t-name {
     margin-left: 10px;
+    font-weight: bold;
+}
+
+.t-extention {
+    color: #575757;
 }
 
 .top {
