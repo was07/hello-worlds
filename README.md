@@ -1,7 +1,7 @@
 # Hello-Worlds
 Hello World program written in different languages.
 
-Go to the [stats page](https://was07.github.io/Hello-Worlds/) and see how many and which languages we have right now (live data).
+Go to the [stats page](https://was07.github.io/hello-worlds/) and see how many and which languages we have right now (live data).
 
 ## Contribute
 Make a pull request with hello world program in a language we don't have!
