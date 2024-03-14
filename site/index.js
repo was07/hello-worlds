@@ -27,7 +27,7 @@ function set(contentsJson) {
     }
 
     document.getElementById("loading").innerHTML = "";
-    setNum(contentsJson.length - 1);
+    setNum(contentsJson.length);
 }
 
 fetch('https://api.github.com/repos/was07/Hello-Worlds/contents/programs').then(function(contents) {
